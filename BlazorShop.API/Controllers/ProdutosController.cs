@@ -24,6 +24,7 @@ namespace BlazorShop.API.Controllers
                 var produtos = await _produtoRepository.GetItens();
                 if (produtos is null)
                     return NotFound();
+
                 var produtosDTOs = produtos.ConverterProdutosParaDto();
                 return Ok(produtosDTOs);
             }
@@ -42,6 +43,7 @@ namespace BlazorShop.API.Controllers
                 var produto = await _produtoRepository.GetItem(id);
                 if (produto is null)
                     return NotFound("Produto não encontrado");
+
                 var produtoDTOs = produto.ConverterProdutoParaDto();
                 return Ok(produtoDTOs);
             }
