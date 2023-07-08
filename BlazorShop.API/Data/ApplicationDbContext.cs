@@ -265,13 +265,13 @@ namespace BlazorShop.API.Data
             modelBuilder.Entity<Usuario>().HasData(new Usuario
             {
                 Id = 1,
-                NomeUsuario = "Macoratti"
+                NomeUsuario = "Jackson"
 
             });
             modelBuilder.Entity<Usuario>().HasData(new Usuario
             {
                 Id = 2,
-                NomeUsuario = "Janice"
+                NomeUsuario = "Joseph"
 
             });
 

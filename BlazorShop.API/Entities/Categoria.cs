@@ -1,10 +1,13 @@
 ﻿using System.Collections.ObjectModel;
+using System.ComponentModel.DataAnnotations;
 
 namespace BlazorShop.API.Entities
 {
     public class Categoria
     {
         public int Id { get; set; }
+
+        [MaxLength(100)]
         public required string Nome { get; set; }
         public string IconCSS { get; set; } = string.Empty;
 
