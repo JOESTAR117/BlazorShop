@@ -9,7 +9,7 @@ namespace BlazorShop.API.Data
         { }
 
         public DbSet<Carrinho>? Carrinhos { get; set; }
-        public DbSet<CarrinhoItem>? CarrinhosItens { get; set; }
+        public DbSet<CarrinhoItem>? CarrinhoItens { get; set; }
         public DbSet<Produto>? Produtos { get; set; }
         public DbSet<Categoria>? Categorias { get; set; }
         public DbSet<Usuario>? Usuarios { get; set; }
@@ -265,7 +265,7 @@ namespace BlazorShop.API.Data
             modelBuilder.Entity<Usuario>().HasData(new Usuario
             {
                 Id = 1,
-                NomeUsuario = "Jackson"
+                NomeUsuario = "Jackson Junior"
 
             });
             modelBuilder.Entity<Usuario>().HasData(new Usuario
@@ -279,13 +279,13 @@ namespace BlazorShop.API.Data
             modelBuilder.Entity<Carrinho>().HasData(new Carrinho
             {
                 Id = 1,
-                UsuarioId = 1
+                UsuarioId = "1"
 
             });
             modelBuilder.Entity<Carrinho>().HasData(new Carrinho
             {
                 Id = 2,
-                UsuarioId = 2
+                UsuarioId = "2"
 
             });
             //Add Produto Categories

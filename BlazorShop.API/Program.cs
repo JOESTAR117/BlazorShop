@@ -20,6 +20,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 
 
 builder.Services.AddScoped<IProdutoRepository, ProdutoRepository>();
+builder.Services.AddScoped<ICarrinhoCompraRepository, CarrinhoCompraRepository>();
 
 var app = builder.Build();
 
